@@ -239,6 +239,7 @@
                 https://cloud.google.com/dialogflow/docs/reference/rest/v2beta1/projects.agent.intents#QuickReplies
                 https://cloud.google.com/dialogflow/docs/reference/rest/v2beta1/projects.agent.intents#Suggestions
             -->
+            <bubble-wrapper>
             <span v-if="suggestions.text_suggestions">
 
                 <Suggestion
@@ -248,16 +249,19 @@
                         @click.native="send({text: suggestion})"
                 />
             </span>
+            </bubble-wrapper>
 
             <!-- Link suggestion chips
                 https://developers.google.com/actions/assistant/responses#suggestion_chips
                 https://cloud.google.com/dialogflow/docs/reference/rest/v2beta1/projects.agent.intents#LinkOutSuggestion
             -->
+
             <Suggestion
                     v-if="suggestions.link_suggestion"
                     :title="suggestions.link_suggestion.destinationName"
                     :url="suggestions.link_suggestion.uri || suggestions.link_suggestion.url"
             />
+
         </ChatInput>
     </main>
 </template>
