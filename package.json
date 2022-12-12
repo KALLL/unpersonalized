@@ -11,7 +11,7 @@
     "audio-recorder-polyfill": "^0.3.4",
     "core-js": "^3.6.4",
     "dialogflow-gateway": "0.0.7",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "hark": "^1.2.3",
     "langs": "^2.0.0",
     "register-service-worker": "^1.7.1",
